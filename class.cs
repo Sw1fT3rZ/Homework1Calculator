@@ -7,26 +7,26 @@ class Calculator
         while (true)
         {
             Console.Clear();
-            Console.WriteLine("Консольний калькулятор");
-            Console.WriteLine("Оберіть операцію:");
-            Console.WriteLine("1. Додавання (+)");
-            Console.WriteLine("2. Віднімання (-)");
-            Console.WriteLine("3. Множення (*)");
-            Console.WriteLine("4. Ділення (/)");
-            Console.WriteLine("5. Вийти");
+            Console.WriteLine("РљРѕРЅСЃРѕР»СЊРЅРёР№ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂ");
+            Console.WriteLine("РћР±РµСЂС–С‚СЊ РѕРїРµСЂР°С†С–СЋ:");
+            Console.WriteLine("1. Р”РѕРґР°РІР°РЅРЅСЏ (+)");
+            Console.WriteLine("2. Р’С–РґРЅС–РјР°РЅРЅСЏ (-)");
+            Console.WriteLine("3. РњРЅРѕР¶РµРЅРЅСЏ (*)");
+            Console.WriteLine("4. Р”С–Р»РµРЅРЅСЏ (/)");
+            Console.WriteLine("5. Р’РёР№С‚Рё");
 
             string choice = Console.ReadLine();
 
             if (choice == "5")
             {
-                Console.WriteLine("Вихід з програми.");
+                Console.WriteLine("Р’РёС…С–Рґ Р· РїСЂРѕРіСЂР°РјРё.");
                 break;
             }
 
-            Console.Write("Введіть перше число: ");
+            Console.Write("Р’РІРµРґС–С‚СЊ РїРµСЂС€Рµ С‡РёСЃР»Рѕ: ");
             double num1 = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Введіть друге число: ");
+            Console.Write("Р’РІРµРґС–С‚СЊ РґСЂСѓРіРµ С‡РёСЃР»Рѕ: ");
             double num2 = Convert.ToDouble(Console.ReadLine());
 
             double result = 0;
@@ -35,33 +35,33 @@ class Calculator
             {
                 case "1":
                     result = num1 + num2;
-                    Console.WriteLine($"Результат: {num1} + {num2} = {result}");
+                    Console.WriteLine($"Р РµР·СѓР»СЊС‚Р°С‚: {num1} + {num2} = {result}");
                     break;
                 case "2":
                     result = num1 - num2;
-                    Console.WriteLine($"Результат: {num1} - {num2} = {result}");
+                    Console.WriteLine($"Р РµР·СѓР»СЊС‚Р°С‚: {num1} - {num2} = {result}");
                     break;
                 case "3":
                     result = num1 * num2;
-                    Console.WriteLine($"Результат: {num1} * {num2} = {result}");
+                    Console.WriteLine($"Р РµР·СѓР»СЊС‚Р°С‚: {num1} * {num2} = {result}");
                     break;
                 case "4":
                     if (num2 != 0)
                     {
                         result = num1 / num2;
-                        Console.WriteLine($"Результат: {num1} / {num2} = {result}");
+                        Console.WriteLine($"Р РµР·СѓР»СЊС‚Р°С‚: {num1} / {num2} = {result}");
                     }
                     else
                     {
-                        Console.WriteLine("Помилка: ділення на нуль.");
+                        Console.WriteLine("РџРѕРјРёР»РєР°: РґС–Р»РµРЅРЅСЏ РЅР° РЅСѓР»СЊ.");
                     }
                     break;
                 default:
-                    Console.WriteLine("Невірний вибір. Спробуйте ще раз.");
+                    Console.WriteLine("РќРµРІС–СЂРЅРёР№ РІРёР±С–СЂ. РЎРїСЂРѕР±СѓР№С‚Рµ С‰Рµ СЂР°Р·.");
                     break;
             }
 
-            Console.WriteLine("Натисніть будь-яку клавішу, щоб продовжити...");
+            Console.WriteLine("РќР°С‚РёСЃРЅС–С‚СЊ Р±СѓРґСЊ-СЏРєСѓ РєР»Р°РІС–С€Сѓ, С‰РѕР± РїСЂРѕРґРѕРІР¶РёС‚Рё...");
             Console.ReadKey();
         }
     }
